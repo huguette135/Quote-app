@@ -6,3 +6,11 @@ import { Quote } from '../quote';
   templateUrl: './quote-details.component.html',
   styleUrls: ['./quote-details.component.css']
 })
+export class QuoteDetailsComponent implements OnInit {
+
+  @Input() Quote:Quote;
+  @Output() complete = new EventEmitter<boolean>();
+
+  quoteDelete(deletequt:boolean) {
+    this.complete.emit(deletequt);
+  }
