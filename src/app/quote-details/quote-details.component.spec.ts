@@ -2,7 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { QuoteDetailsComponent } from './quote-details.component';
 
-describe('QuoteDetailsComponent', () => {
+describe('QuoteDetailComponent', () => {
   let component: QuoteDetailsComponent;
   let fixture: ComponentFixture<QuoteDetailsComponent>;
 
@@ -12,7 +12,6 @@ describe('QuoteDetailsComponent', () => {
     })
     .compileComponents();
   });
-
   beforeEach(() => {
     fixture = TestBed.createComponent(QuoteDetailsComponent);
     component = fixture.componentInstance;
